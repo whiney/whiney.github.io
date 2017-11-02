@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f3312eb2b1988723bf44774f9dd305ec";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/API/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="地主家的傻儿子">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://og3rfccos.bkt.clouddn.com/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/API/" itemprop="url">API</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-25T15:55:31+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/elasticsearch/" itemprop="url" rel="index">
+                    <span itemprop="name">elasticsearch</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="springboot-elasticsearch"><a href="#springboot-elasticsearch" class="headerlink" title="springboot-elasticsearch"></a>springboot-elasticsearch</h2><blockquote>
+<p>基于springboot的web项目，通过elasticsearch提供的Java API 进行查询操作.</p>
+</blockquote>
+<h4 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h4><p>项目在一个查询要在亚秒级计算（分组、累加、平均）大量数据的结果。官方提供的API过于简单，自己在做项目中遇到了一些坑，并总结了一些API的使用，简单分享一下。</p>
+<h4 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h4><p>有一个elasticsearch服务</p>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><blockquote>
+<p>demo是基于springboot快速构建了一个web应用。elasticsearch提供了一个客户端:<code>TransportClient</code>,首先我们来配置一下</p>
+</blockquote>
+<h5 id="如果在main方法里面执行可以直接创建一个客户端连接"><a href="#如果在main方法里面执行可以直接创建一个客户端连接" class="headerlink" title="如果在main方法里面执行可以直接创建一个客户端连接"></a>如果在main方法里面执行可以直接创建一个客户端连接</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">TransportClient client = new PreBuiltTransportClient(Settings.EMPTY)</div><div class="line">                .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(&quot;172.16.3.121&quot;), 9300));</div></pre></td></tr></table></figure>
+<h5 id="如果在springboot项目中。配置一下，这样我们可以直接注入使用了。"><a href="#如果在springboot项目中。配置一下，这样我们可以直接注入使用了。" class="headerlink" title="如果在springboot项目中。配置一下，这样我们可以直接注入使用了。"></a>如果在springboot项目中。配置一下，这样我们可以直接注入使用了。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">@Configuration</div><div class="line">public class ElasticSearchConfig &#123;</div><div class="line"></div><div class="line">    @Value(&quot;$&#123;spring.elasticsearch.host&#125;&quot;)</div><div class="line">    private String host;//elasticsearch的地址</div><div class="line"></div><div class="line">    @Value(&quot;$&#123;spring.elasticsearch.port&#125;&quot;)</div><div class="line">    private Integer port;//elasticsearch的端口</div><div class="line"></div><div class="line">    private static final Logger LOG = LogManager.getLogger(ElasticSearchConfig.class);</div><div class="line"></div><div class="line">    @Bean</div><div class="line">    public TransportClient client()&#123;</div><div class="line">        TransportClient client = null;</div><div class="line">        try &#123;</div><div class="line"></div><div class="line">            client = new PreBuiltTransportClient(Settings.EMPTY)</div><div class="line">                    .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(host), port));</div><div class="line">        &#125; catch (UnknownHostException e) &#123;</div><div class="line">            LOG.error(&quot;创建elasticsearch客户端失败&quot;);</div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;</div><div class="line">        LOG.info(&quot;创建elasticsearch客户端成功&quot;);</div><div class="line">        return client;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">配置完毕之后，我们就可以使用了。这里写了一个简单的demo，汇总了常用的一些API使用。</div></pre></td></tr></table></figure>
+<h4 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h4><blockquote>
+<p>这个代码示例满足了查询所需，查询条件，分组计算，分组排序等</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">Map&lt;String,Object&gt; map = Collections.emptyMap();</div><div class="line"></div><div class="line">    Script script = new Script(ScriptType.INLINE, &quot;painless&quot;,&quot;params._value0 &gt; 0&quot;,map);  //提前定义好查询销量是否大于1000的脚本，类似SQL里面的having</div><div class="line"></div><div class="line">    long beginTime = System.currentTimeMillis();</div><div class="line"></div><div class="line">    SearchResponse sr = client.prepareSearch(&quot;adele&quot;).setTypes(&quot;sale&quot;)</div><div class="line">            .setQuery(QueryBuilders.boolQuery()</div><div class="line">                    .must(QueryBuilders.termQuery(&quot;store_name.keyword&quot;, &quot;xxx旗舰店&quot;))  //挨个设置查询条件，没有就不加，如果是字符串类型的，要加keyword后缀</div><div class="line">                    .must(QueryBuilders.termQuery(&quot;department_name.keyword&quot;, &quot;玎&quot;))</div><div class="line">                    .must(QueryBuilders.termQuery(&quot;category_name.keyword&quot;, &quot;T恤&quot;))</div><div class="line">                    .must(QueryBuilders.rangeQuery(&quot;pay_date&quot;).gt(&quot;2017-03-07&quot;).lt(&quot;2017-07-09&quot;))</div><div class="line">            ).addAggregation(</div><div class="line">                    AggregationBuilders.terms(&quot;by_product_code&quot;).field(&quot;product_code.keyword&quot;).size(500) //按货号分组，最多查500个货号.SKU直接改字段名字就可以</div><div class="line">                            .subAggregation(AggregationBuilders.terms(&quot;by_store_name&quot;).field(&quot;store_name.keyword&quot;).size(50) //按店铺分组，不显示店铺可以过滤掉这一行，下边相应减少一个循环</div><div class="line">                                    .subAggregation(AggregationBuilders.sum(&quot;total_sales&quot;).field(&quot;quantity&quot;))  //分组计算销量汇总</div><div class="line">                                    .subAggregation(AggregationBuilders.sum(&quot;total_sales_amount&quot;).field(&quot;amount_actual&quot;))  //分组计算实付款汇总，需要加其他汇总的在这里依次加</div><div class="line">                                    .subAggregation(PipelineAggregatorBuilders.bucketSelector(&quot;sales_bucket_filter&quot;,script,&quot;total_sales&quot;)))//查询是否大于指定值</div><div class="line">                            .order(Terms.Order.compound(Terms.Order.aggregation(&quot;total_calculate_sale_amount&quot;,false)))) //分组排序</div><div class="line"></div><div class="line">            .execute().actionGet();</div><div class="line"></div><div class="line">    Terms terms = sr.getAggregations().get(&quot;by_product_code&quot;);   //查询遍历第一个根据货号分组的aggregation</div><div class="line"></div><div class="line">    System.out.println(terms.getBuckets().size());</div><div class="line">    for (Terms.Bucket entry : terms.getBuckets()) &#123;</div><div class="line">        System.out.println(&quot;------------------&quot;);</div><div class="line">        System.out.println(&quot;【 &quot; + entry.getKey() + &quot; 】订单数 : &quot; + entry.getDocCount() );</div><div class="line"></div><div class="line">        Terms subTerms = entry.getAggregations().get(&quot;by_store_name&quot;);    //查询遍历第二个根据店铺分组的aggregation</div><div class="line">        for (Terms.Bucket subEntry : subTerms.getBuckets()) &#123;</div><div class="line">            Sum sum1 = subEntry.getAggregations().get(&quot;total_sales&quot;); //取得销量的汇总</div><div class="line">            double total_sales = sum1.getValue();</div><div class="line">            System.out.println(subEntry.getKey() + &quot; 订单数:  &quot; + subEntry.getDocCount() + &quot;  销量: &quot; + total_sales); //店铺和订单数量和销量</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    long endTime = System.currentTimeMillis();</div><div class="line">    System.out.println(&quot;查询耗时&quot; + ( endTime - beginTime ) + &quot;毫秒&quot;);</div></pre></td></tr></table></figure>
+<h4 id="demo地址"><a href="#demo地址" class="headerlink" title="demo地址"></a>demo地址</h4><p><a href="https://github.com/whiney/springboot-elasticsearch.git" target="_blank" rel="external">springboot-elasticsearch</a></p>
+<ol>
+<li>启动项目</li>
+<li>访问<a href="http://localhost:9999/test" target="_blank" rel="external">http://localhost:9999/test</a></li>
+<li>查看后端打印</li>
+</ol>
+<h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><p><a href="https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/java-search.html" target="_blank" rel="external">Search API</a></p>
+<p>有一些坑是我领导踩得，部分代码已得授权。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/24/数据科学/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="地主家的傻儿子">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://og3rfccos.bkt.clouddn.com/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/24/数据科学/" itemprop="url">数据科学</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-24T15:59:20+08:00">
+                2017-05-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://upload-images.jianshu.io/upload_images/1089029-3b841d3d7bdc133a.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="数据科学带给了我们什么"></p>
+<h2 id="数据科学是什么"><a href="#数据科学是什么" class="headerlink" title="数据科学是什么"></a>数据科学是什么</h2><blockquote>
+<p>数据挖掘、机器学习、人工智能都是数据科学的一个分类。</p>
+</blockquote>
+<p>接下来，我们从这几个方面来剖析一下数据科学</p>
+<ul>
+<li>制定目标</li>
+<li>收集和管理数据</li>
+<li>建立模型</li>
+<li>评价和批判模型</li>
+<li>展现结果</li>
+<li>部署模型</li>
+</ul>
+<h2 id="制定目标"><a href="#制定目标" class="headerlink" title="制定目标"></a>制定目标</h2><blockquote>
+<p>为什么要做这个事情</p>
+</blockquote>
+<ul>
+<li>提升销量</li>
+<li>减少退货损失</li>
+<li>提升转换率</li>
+</ul>
+<h2 id="收集和管理数据"><a href="#收集和管理数据" class="headerlink" title="收集和管理数据"></a>收集和管理数据</h2><h4 id="收集"><a href="#收集" class="headerlink" title="收集"></a>收集</h4><ul>
+<li>初步探索（最大值、最小值、平均值、中位数、分位数、方差、标准差）</li>
+<li>可视化操作</li>
+</ul>
+<h4 id="管理"><a href="#管理" class="headerlink" title="管理"></a>管理</h4><ul>
+<li>发现有用的数据</li>
+<li>不断的探索</li>
+</ul>
+<p>在收集数据和数据模型之间不断反复</p>
+<h2 id="建立模型"><a href="#建立模型" class="headerlink" title="建立模型"></a>建立模型</h2><blockquote>
+<p>建立数据模型是数据科学的核心</p>
+</blockquote>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><blockquote>
+<p>预测某个东西属于哪个类别，使用最广泛</p>
+</blockquote>
+<h4 id="应用领域"><a href="#应用领域" class="headerlink" title="应用领域"></a>应用领域</h4><ul>
+<li>销售预测</li>
+<li>用户购买行为预测</li>
+<li>款式查重</li>
+<li>人脸识别</li>
+<li>声音识别</li>
+<li>图片学习</li>
+<li>深度学习</li>
+</ul>
+<p>首先有一个很大的类库，打上标签，通过分类算法，找出共性，学习完成之后，就可以进行分类了。<br>支付宝上已经在这方面取得了一些成功。</p>
+<h3 id="打分"><a href="#打分" class="headerlink" title="打分"></a>打分</h3><blockquote>
+<p>为某事件预测一个数值（比如购买概率、定价）</p>
+</blockquote>
+<h4 id="引用领域"><a href="#引用领域" class="headerlink" title="引用领域"></a>引用领域</h4><ul>
+<li>推荐引擎</li>
+<li>定价模型</li>
+</ul>
+<p>预测一个商品的打分，给特定的人定价格。</p>
+<p>AlphaGo就是利用的打分和分类</p>
+<h3 id="排名"><a href="#排名" class="headerlink" title="排名"></a>排名</h3><blockquote>
+<p>排序<br>和打分很类似</p>
+</blockquote>
+<h3 id="聚类"><a href="#聚类" class="headerlink" title="聚类"></a>聚类</h3><blockquote>
+<p>某个东西现在属于哪个类别</p>
+</blockquote>
+<h4 id="应用领域-1"><a href="#应用领域-1" class="headerlink" title="应用领域"></a>应用领域</h4><ul>
+<li>豆瓣九点</li>
+<li>评论信息</li>
+</ul>
+<p>这种很容易和分类搞混，它不是预测算法，是由机器自动分类啊。某个东西属于哪个类别。<br>因为文本信息很复杂，维度太多了，人工分类很困难，机器聚类有一个比较明确的概念。</p>
+<h3 id="关联"><a href="#关联" class="headerlink" title="关联"></a>关联</h3><blockquote>
+<p>找出潜在的相关性</p>
+</blockquote>
+<h4 id="应用领域-2"><a href="#应用领域-2" class="headerlink" title="应用领域"></a>应用领域</h4><ul>
+<li>啤酒与尿布（虽然是假的）</li>
+</ul>
+<p>很出名的啤酒与尿布的故事，因为它是入门的数据模型，可以挖掘潜在的相关性，理论上挖掘出来可靠性多少等。电商里面用在推荐和搭配上</p>
+<h3 id="特征化"><a href="#特征化" class="headerlink" title="特征化"></a>特征化</h3><blockquote>
+<p>绘图或者报表</p>
+</blockquote>
+<h4 id="应用领域-3"><a href="#应用领域-3" class="headerlink" title="应用领域"></a>应用领域</h4><ul>
+<li>广告投放</li>
+</ul>
+<p>打标签，在业务上分组。在电商业务上多用于广告的投放。</p>
+<h2 id="评价和批判模型"><a href="#评价和批判模型" class="headerlink" title="评价和批判模型"></a>评价和批判模型</h2><ul>
+<li>准确率</li>
+<li>召回率</li>
+<li>是否比随机预测或者猜测更好</li>
+<li>是否现实意义</li>
+</ul>
+<p>模型好不好，别乱猜要好。比如生男女的几率，通过一系列的模型得出的结果可能比不上你的猜测，因为你的猜测有百分之五十的几率，已经很大了。<br>不断的调整参数和新模型，花了一个月时间，准确率可能高了百分之一，也可能准确率讲下了。<br>具体怎么算，有类似Apache提供了Mahout等工具来算这些东西</p>
+<h2 id="展现结果"><a href="#展现结果" class="headerlink" title="展现结果"></a>展现结果</h2><blockquote>
+<p>展示和编制分析报告是必不可少的</p>
+</blockquote>
+<ul>
+<li>体现你的目标，一定要有目标，我在这里面根据我的预测应该会出现什么样的结果来解释我的模型。</li>
+<li>展示模型输出的结果，模型的解读，通过一些可视化的工具来很明显的表现出模型的好处。</li>
+<li>置信度，比如：我们预测某个商品下个星期大卖，有百分之七十的可能性。然后让对方来评估风险，在进行生产等操作。很重要。</li>
+</ul>
+<h2 id="部署模型"><a href="#部署模型" class="headerlink" title="部署模型"></a>部署模型</h2><blockquote>
+<p>试运行和不断调整</p>
+</blockquote>
+<p>评价模型 不一定要新的数据, 拿历史数据来评价，训练级和测试级，在模型建立的时期，来判断数据模型的好坏。不能等上线之后。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这一节课，我们了解了数据科学是什么，然后怎么制定分析目标，同时解说了几种模型和数据编制分析报告的重要性，还有一些部署模型的注意点。同时对数据科学与时下热门的机器学习和人工智能的关系有了一些了解。并了解了数据科学在实际业务上的一些实际操作。这一章节很重要，虽然信息量和陌生感可能大了一些，但是让我们体会到了我们数据科学之美。</p>
+<h2 id="下节课预告"><a href="#下节课预告" class="headerlink" title="下节课预告"></a>下节课预告</h2><ul>
+<li>数据探索和管理</li>
+<li>数据基本统计和基本可视化</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/11/项目组目前的GIT管理方式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="地主家的傻儿子">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://og3rfccos.bkt.clouddn.com/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/11/项目组目前的GIT管理方式/" itemprop="url">项目组目前的GIT管理方式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-11T15:53:58+08:00">
+                2017-05-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/日常小结/" itemprop="url" rel="index">
+                    <span itemprop="name">日常小结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="项目组目前的GIT管理方式"><a href="#项目组目前的GIT管理方式" class="headerlink" title="项目组目前的GIT管理方式"></a>项目组目前的GIT管理方式</h2><h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>随着项目组开发人员增多，我们用了Tower协作来管理文档和任务进度。</p>
+<p>但是代码管理这方面还是有点凌乱。原因是我们没有发挥Git的真正的力量。</p>
+<p>团队多人如何协作？</p>
+<p>冲突了怎么办？</p>
+<p>如何进行发布控制？</p>
+<p>这些问题还是一直在出现。一直没有一个良好的规范。</p>
+<p>在这样的情况下，我们只做了一点git使用方式的改变，效果却异常的显著。</p>
+<h3 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h3><p><img src="http://upload-images.jianshu.io/upload_images/1089029-08301c5a2477a4fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<h3 id="分支创建"><a href="#分支创建" class="headerlink" title="分支创建"></a>分支创建</h3><blockquote>
+<p>为了更好的管理代码，我们设置了三个分支。其中开发人员只关注develop分支。测试人员只关注release分支。发布只用develop分支。</p>
+</blockquote>
+<ul>
+<li>develop<blockquote>
+<p>开发分支</p>
+</blockquote>
+</li>
+<li>release<blockquote>
+<p>测试分支</p>
+</blockquote>
+</li>
+<li>master<blockquote>
+<p>发布分支</p>
+</blockquote>
+</li>
+</ul>
+<p>大体的代码分支管理是这样的。接下来，来讲解一下开发流程。</p>
+<h3 id="工作流"><a href="#工作流" class="headerlink" title="工作流"></a>工作流</h3><blockquote>
+<p>git-flow 是git的一个扩展级，提供了高层次的库操作。sourceTree等一些git界面工具，已经提供了对它的支持。</p>
+</blockquote>
+<h4 id="新建"><a href="#新建" class="headerlink" title="新建"></a>新建</h4><ol>
+<li>git-flow 初始化仓库</li>
+<li>git-flow 建立新的功能<blockquote>
+<p>这样就会有一个单独的分支</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h4><ol>
+<li>拉取develop分支的最新代码</li>
+<li>git-flow 完成新的功能</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>目前只用到整理一下分支管理和用到了git-flow一些皮毛。虽然只有这些，但是让我们的开发条理了很多，希望在不断和团队的磨合中，能更高效的使用git。到时候再做一些总结。</p>
+<h3 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h3><p><a href="https://github.com/xirong/my-git/blob/master/ixirong.com.md" target="_blank" rel="external">git</a></p>
+<p><a href="http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html" target="_blank" rel="external">git-flow中文清单</a></p>
+<p><a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="external">A successful Git branching model</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/04/2017/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="地主家的傻儿子">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://og3rfccos.bkt.clouddn.com/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/01/04/2017/" itemprop="url">2017</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-04T15:53:01+08:00">
+                2017-01-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/日常/" itemprop="url" rel="index">
+                    <span itemprop="name">日常</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="妈妈说：目标呢，一定要简单粗暴。"><a href="#妈妈说：目标呢，一定要简单粗暴。" class="headerlink" title="妈妈说：目标呢，一定要简单粗暴。"></a>妈妈说：目标呢，一定要简单粗暴。</h4><ul>
+<li><p>学一门乐器</p>
+</li>
+<li><p>读一百本书</p>
+</li>
+<li><p>去三个陌生的城市</p>
+</li>
+<li><p>买一辆车</p>
+</li>
+<li><p>每周至少做一份美食</p>
+</li>
+<li><p>每周至少练五篇字帖</p>
+</li>
+<li><p>每月至少写一篇博客</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/06/浅读《乌合之众》-《厚黑学》/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="地主家的傻儿子">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://og3rfccos.bkt.clouddn.com/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/11/06/浅读《乌合之众》-《厚黑学》/" itemprop="url">浅读《乌合之众》+《厚黑学》</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-06T15:52:05+08:00">
+                2016-11-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/读后感/" itemprop="url" rel="index">
+                    <span itemprop="name">读后感</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="序"><a href="#序" class="headerlink" title="序"></a>序</h4><blockquote>
+<p>​    同事采购了一堆设计的书，《乌合之众》是顺手买的，不过被我截胡了。原因是之前有人推荐过这本书，不过一直很忙，没有读过。    赶巧的事，这个月阅读的两本书都是有些偏激的。另一本是李宗吾的《厚黑学》，开篇他就说自己的书有些偏激。虽然这两本书有些偏激，我也是在茶余饭后闲读完的。不过读完之后，第一感觉竟然去参加美观大选。哈哈哈，看来下个月茶余饭后要读两本理性些的书了。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1089029-fa7896864b424400.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="乌合之众.jpg"></p>
+<h4 id="乌合之众"><a href="#乌合之众" class="headerlink" title="乌合之众"></a>乌合之众</h4><pre><code>书中有个例子让我感觉很惊奇。就是说如果大约四十人的团队在表决一件事情的时候。四十个的高等学历的科学家和四十个普通人的决定没有任何的差别。
+差异吗？
+我只能说，我很差异。其实浅读一下它的观点，就是说如果一群人在一起，智力就会低下，不如一个人的时候理性，所做的决定就会变得愚蠢。是不是感觉自己很蠢，因为我们生活中到处都是群体生活，独立出来之后反而感觉与整个世界格格不入。
+书中也多次提到了拿破仑。拿破仑，我们所熟知的就是他是一个军事天才，政治天才。怎么说呢，反正他在我心里和忽必烈一样。这本书解读了拿破仑的成功。因为什么呢？是因为他明白怎么领导一群乌合之众。突然想到了时下的网络道德绑架。网民不就是一群乌合之众吗？举个简单的例子，当我们得知一个明星在某个慈善晚宴没有捐款的时候，在不明所以的情况下，被几个网络喷子完全带跑偏了。开始围攻对方。但是当这阵风吹过之后呢，我们自己冷静下来的时候。发现，自己做到给予别人帮助了吗？为什么去要求别人呢的这种自省心理。
+当然把喷子和我大拿破仑相比较，我心里是很不舒服的。当时当我阅读这本书的时候，看到拿破仑如何通过不明觉厉的演讲去说服一群部下为其卖命的时候，我心里怎么就那么突然不舒服了呢。
+</code></pre><p><img src="http://upload-images.jianshu.io/upload_images/1089029-b8367ff8cd17a861.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="厚黑.jpg"></p>
+<p>####厚黑学<br>    何为厚黑，脸厚心黑是也。有人说厚黑误国，我倒是觉得有些小题大做了，不过时下的社会处处都是些脸厚心黑的人倒是真的。<br>    第二篇厚黑原理，作者提过一句，如果你读厚黑学，一定要把它放在自己的桌子下面。真正的厚黑是隐藏在黑暗里，明处不予一点表现的。俗称：腹黑。<br>    书中的有一个例子让我觉得很靠谱，就是项羽的例子。因为我对古代的大将 有种莫名的崇拜之情。项羽在乌江边自刎这件事儿，我一直觉得是很男人的一件事儿。且籍与江东子弟八千人渡江而西，今无一人还，纵江东父兄怜而王我，我何面目见之？霸气的很。可是心里却有些可惜，当时我觉得如果你过江，东山再起，哪儿还有刘邦那个宵小的天下。在这这本书里，我找到了安慰。要成事儿就得脸厚心黑。项羽是心黑脸不厚。韩信的胯下之辱之后又失败的例子，告诉我们。他是脸厚心不黑。<br>    其实这本书，只读开篇厚黑学和厚黑别论就好。因为中间两篇有些让人摸不着头脑，而且太多偏激了，举了一些论证推厚黑学，比如其中一篇关于达尔文的进化论学的修正，我就很摸不到头脑。</p>
+<p>####说两句<br>    这两本书都一些偏激。因为《厚黑学》在《乌合之众》之后，所以，《厚黑学》书中对于《乌合之众》有些点评，比如《乌合之众》里面对群体的弱智表现，《厚黑学》里面说是一种合力表现。<br>    我一直觉得心理学的书，一定要深度和实践的，我只是浅读。人还是要活的单纯点，比如当我读这两本书的时候，再看网络上面的一些道德绑架和正在进行的美国大选，就忍不住想笑。<br>    道德绑架完全符合《乌合之众》，而美国大学完全符合《厚黑学》。<br>    最后，推荐你看完这两本书的时候，去看看一部美剧《纸牌屋》。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/16/偷影子的人/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="地主家的傻儿子">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://og3rfccos.bkt.clouddn.com/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/08/16/偷影子的人/" itemprop="url">偷影子的人</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-16T15:50:59+08:00">
+                2016-08-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/读后感/" itemprop="url" rel="index">
+                    <span itemprop="name">读后感</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://upload-images.jianshu.io/upload_images/1089029-c91520167b9c41a0.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="偷影子的人"><br>          马克李维是一个法国作家，很出名的那种。可是我却从未拜读过他的书。《偷影子的人》是他的第10部作品。能读到这本书，也是在机缘巧合之下的。本来我准备读的有两本书，另一本是林语堂的《生活的艺术》。这里两本书都讲述的生活，粗略翻了几页《生活的艺术》，略微有些艰涩难懂，而《偷影子的人》这本书讲述了一个很平淡，不完整的故事。也许是最近生活有些变化，想简单一些，所以先读了这本书。<br>           这原本是一个平平淡淡的故事。一个弱小的男生，处在一个离异的家庭，班级里有一个又高又壮，经常欺负他的男孩，有一个至交好友，还自述了一段懵懂的爱情。平淡的题材如一颗平凡的石头，却被马克李维雕琢成了无价之宝，不愧为神级作家。<br> 作者为男主赋予了一种能力，可以偷到别人的影子。与其说是影子，不如说是内心世界，可以窥探别人的隐私。其实每个人都有自己的另一面，强大的人有软弱的地方，弱小的人也有很高的理想。当我们站在对方的角度的时候，就会变得坦然，更能让自己去理解对方。当男孩变大的时候，这种能力貌似就消失了。还是说只有当我们有一个纯洁如小孩般的心才能拥有这种能力呢。<br>          这本书的章节描述了影子的秘密，海上的克蕾尔，好朋友吕克的梦想，还有自己的完美女友苏菲，到最后唤回对初恋的回忆。却唯独没有单独描写深爱自己的母亲。虽然没有列出来，但是母亲的爱却贯穿了文章的全部。母亲对男孩倾注了所有了爱，而男孩也同样深爱着自己的母亲，却没有表达出来。他知道了很多人的秘密，却唯独没有了解过自己母亲的秘密。看到这里，我是不是应该给我们的妈妈打个电话，说一声我爱你呢。<br>           我们在书中总能找到自己的影子。一个难忘的女孩，可能那个女孩没有用风筝写我想你。一个最要好的朋友，你可以为了他付出自己所有的真心，不求回报。你同样也可能谈过一个女朋友，她很理解你，懂你，也同样知道你不喜欢她，却愿意为你付出所有。<br>           追求该追求的，努力该努力的，奋斗该奋斗的，享受该享受的，不要太多抱怨，不要太多期待。拥抱生活，活在当下吧。<br><img src="http://upload-images.jianshu.io/upload_images/1089029-1b4e51795d1035f3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="一个人也要好好吃早餐"><br>           我的选择是对的，读这本书，描述生活的书，本来就应该简单，有趣，温馨，感动。当最后男孩的影子亲吻了克蕾尔影子的时候，我合上了这本书。这时候已经深夜11点，我却无法掩盖自己心中的那份小小的幸福。它让我回到了自己纯真无邪的年纪，就这么决定了，就明天，我也要去偷一下别人的影子。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/01/我们仨/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="地主家的傻儿子">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://og3rfccos.bkt.clouddn.com/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/07/01/我们仨/" itemprop="url">我们仨</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-01T15:48:41+08:00">
+                2016-07-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/读后感/" itemprop="url" rel="index">
+                    <span itemprop="name">读后感</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>   我是一个反应慢的人。</p>
+<p>   前段时间，杨绛先生去世，看到朋友圈里各种刷屏，我有些恍如隔世的感觉。</p>
+<p>   这些人也许可能都不知道杨绛先生是男还是女吧！</p>
+<p>   《我们仨》最初是由杨绛先生的爱女离世之前想写的，当时已写了几章！可是，病情加重，爱女心切的她劝其停笔，这一停，便是终了。</p>
+<p>   杨绛先生92岁开始提起续写这本书，可能有些人说不是续写，而是重写。而我认为是续！</p>
+<p>   这本书可以分为二部分，梦和忆！</p>
+<p>   梦，是一个长达万里的梦，一个沉重的梦。一生的伴侣，唯一的女儿相继离世。杨绛先生用梦幻的方式表达了出来。古驿道上的相聚相失，看完之后有种压抑的感觉，也许正如阿圆说的：梦想为老，想累了要梦魇的！</p>
+<p>  忆，是一生的回忆。</p>
+<p>  遇到钱先生，钱钟书是一个两耳不闻窗外事的读书人，在京多年，却没出门几次，每每都是杨绛带其出门，他们称之为“探险”。从牛津到巴黎再到回国的历程中，我觉得钱钟书是她的孩子，需要她照顾的孩子。我也明白了，为何人们称杨绛为先生的原因。</p>
+<p>   喜得爱女，爸爸和我最哥们。钱媛继承了父母的一切优点，她是一个三好学生，也是一个好老师，治学严谨，关怀学生。小时候乖巧，听话。长大了，会照顾人，想哥们，像姐妹！</p>
+<p>   这是一个由三人组成的学者家庭的一生，单纯而温馨。</p>
+<p>   文章结尾描述到，九七年早春，钱媛去世，九八年岁末，钱钟书去世，他们仨就这么走散了，看到这里有些痛心疾首的意味！</p>
+<p>   想到前段时间，杨绛先生的去世，不觉有些莞尔，没有不敬的味道，而是想到他仨又相聚了。这篇读后感的开头，我便说了，我是一个反应慢的人。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="http://og3rfccos.bkt.clouddn.com/head.jpeg"
+                alt="地主家的傻儿子" />
+            
+              <p class="site-author-name" itemprop="name">地主家的傻儿子</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">地主家的傻儿子</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+    
+
+    
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
