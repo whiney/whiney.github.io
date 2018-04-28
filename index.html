@@ -259,6 +259,175 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/28/springboot-swagger/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="地主家的傻儿子">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://og3rfccos.bkt.clouddn.com/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="地主家的庄园">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/28/springboot-swagger/" itemprop="url">springboot-swagger</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-28T17:52:55+08:00">
+                2018-04-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/springboot/" itemprop="url" rel="index">
+                    <span itemprop="name">springboot</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>接口管理的强大工具。demo地址在文章最后</p>
+</blockquote>
+<p>项目现在前后端分离，需要一个API的管理工具，在分析了如下几个最终选择了，swagger。比较主流的方式。</p>
+<h4 id="API管理"><a href="#API管理" class="headerlink" title="API管理"></a>API管理</h4><ul>
+<li><a href="https://swagger.io/" target="_blank" rel="external">swagger</a></li>
+<li><a href="https://github.com/thx/RAP" target="_blank" rel="external">RAP</a> 阿里出品，以开发为核心对接口维护</li>
+<li>POSTMAN </li>
+<li><a href="https://github.com/sx1989827/DOClever" target="_blank" rel="external">DOClever</a> 可视化接口管理工具，分析接口，校验接口，采用了JavaScript</li>
+</ul>
+<h4 id="十分钟搭建以springboot为项目的API管理"><a href="#十分钟搭建以springboot为项目的API管理" class="headerlink" title="十分钟搭建以springboot为项目的API管理"></a>十分钟搭建以springboot为项目的API管理</h4><blockquote>
+<p>demo为第二种方式，也是官方推荐</p>
+</blockquote>
+<h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h5><blockquote>
+<p>添加maven包</p>
+<h6 id="第一种方式："><a href="#第一种方式：" class="headerlink" title="第一种方式："></a>第一种方式：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;!-- https://mvnrepository.com/artifact/com.mangofactory/swagger-springmvc --&gt;</div><div class="line">&lt;dependency&gt;</div><div class="line">    &lt;groupId&gt;com.mangofactory&lt;/groupId&gt;</div><div class="line">    &lt;artifactId&gt;swagger-springmvc&lt;/artifactId&gt;</div><div class="line">    &lt;version&gt;1.0.2&lt;/version&gt;</div><div class="line">&lt;/dependency&gt;</div></pre></td></tr></table></figure>
+</blockquote>
+<h6 id="第二种方式"><a href="#第二种方式" class="headerlink" title="第二种方式"></a>第二种方式</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"> &lt;dependency&gt;</div><div class="line">    &lt;groupId&gt;io.springfox&lt;/groupId&gt;</div><div class="line">    &lt;artifactId&gt;springfox-swagger2&lt;/artifactId&gt;</div><div class="line">    &lt;version&gt;2.6.1&lt;/version&gt;</div><div class="line">&lt;/dependency&gt;</div><div class="line"></div><div class="line">&lt;dependency&gt;</div><div class="line">    &lt;groupId&gt;io.springfox&lt;/groupId&gt;</div><div class="line">    &lt;artifactId&gt;springfox-swagger-ui&lt;/artifactId&gt;</div><div class="line">    &lt;version&gt;2.6.1&lt;/version&gt;</div><div class="line">&lt;/dependency&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>官方建议是swagger2</p>
+</blockquote>
+<h4 id="第二步骤"><a href="#第二步骤" class="headerlink" title="第二步骤"></a>第二步骤</h4><blockquote>
+<p>添加Configuration配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">package com.swagger.config;</div><div class="line"></div><div class="line">import org.springframework.context.annotation.Bean;</div><div class="line">import org.springframework.context.annotation.Configuration;</div><div class="line">import springfox.documentation.builders.ApiInfoBuilder;</div><div class="line">import springfox.documentation.builders.PathSelectors;</div><div class="line">import springfox.documentation.builders.RequestHandlerSelectors;</div><div class="line">import springfox.documentation.service.ApiInfo;</div><div class="line">import springfox.documentation.spi.DocumentationType;</div><div class="line">import springfox.documentation.spring.web.plugins.Docket;</div><div class="line"></div><div class="line">@Configuration</div><div class="line">public class SwaggerConfig &#123;</div><div class="line"></div><div class="line">    @Bean</div><div class="line">    public Docket swaggerSpringMvcPlugin()&#123;</div><div class="line">        return new Docket(DocumentationType.SWAGGER_2)</div><div class="line">                .apiInfo(apiInfo())</div><div class="line">                .select()</div><div class="line">                .apis(RequestHandlerSelectors.any())</div><div class="line">                .paths(PathSelectors.any())</div><div class="line">                .build();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    private ApiInfo apiInfo()&#123;</div><div class="line">        return new ApiInfoBuilder()</div><div class="line">                .title(&quot;springboot利用swagger构建api文档&quot;)</div><div class="line">                .description(&quot;简单优雅的restfun风格&quot;)</div><div class="line">                .version(&quot;1.0&quot;)</div><div class="line">                .build();</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h4 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h4><p>启动springboot项目，访问:localhost:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://localhost:9999/swagger-ui.html</div></pre></td></tr></table></figure>
+<p><img src="http://og3rfccos.bkt.clouddn.com/swagger.png" alt="swagger"></p>
+<p><a href="https://github.com/whiney/springboot-swagger" target="_blank" rel="external">springboot-swagger</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/13/icon-font/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1872,7 +2041,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1883,7 +2052,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1894,7 +2063,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
