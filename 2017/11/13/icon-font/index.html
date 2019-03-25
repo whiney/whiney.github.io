@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
+<html lang="">
+  <head>
+    
+<meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -25,45 +12,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
-
+  <meta name="description" content="浅谈雪碧图和字体图标"/>
 
 
 
@@ -74,291 +23,121 @@
 
 
 
+  <link rel="alternate" href="/default" title="柏八万的个人博客">
 
 
 
 
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
 
-<meta name="description" content="起因 现在是前端技术的大时代。若干年过去之后，也许我们会感慨很多，当年阿当的一篇博文多么的犀利。vue和angular的闹剧。最近临危受命，要做几天的前端开发。说是前端开发，其实就是写html+css+JavaScript,真的，当你面对庞大的前端技术体系无所适从的时候,用最简单的技术来一场放松吧。  这一次开发，没有什么特别的，就是我在小图标展示的时候。在雪碧图和图标字体中徘徊了很久。于是，简单">
+
+
+<link rel="canonical" href="http://yoursite.com/2017/11/13/icon-font/"/>
+
+
+<meta name="description" content="这一次开发，没有什么特别的，就是我在小图标展示的时候。在雪碧图和图标字体中徘徊了很久。于是，简单研究了一下，就当立一个flag,日后在深究一下。">
 <meta name="keywords" content="前端,随笔">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈雪碧图和字体图标">
 <meta property="og:url" content="http://yoursite.com/2017/11/13/icon-font/index.html">
-<meta property="og:site_name" content="地主家的庄园">
-<meta property="og:description" content="起因 现在是前端技术的大时代。若干年过去之后，也许我们会感慨很多，当年阿当的一篇博文多么的犀利。vue和angular的闹剧。最近临危受命，要做几天的前端开发。说是前端开发，其实就是写html+css+JavaScript,真的，当你面对庞大的前端技术体系无所适从的时候,用最简单的技术来一场放松吧。  这一次开发，没有什么特别的，就是我在小图标展示的时候。在雪碧图和图标字体中徘徊了很久。于是，简单">
+<meta property="og:site_name" content="柏八万的个人博客">
+<meta property="og:description" content="这一次开发，没有什么特别的，就是我在小图标展示的时候。在雪碧图和图标字体中徘徊了很久。于是，简单研究了一下，就当立一个flag,日后在深究一下。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://og3rfccos.bkt.clouddn.com/1510541347700.jpg">
 <meta property="og:image" content="http://og3rfccos.bkt.clouddn.com/1510542402120.jpg">
-<meta property="og:updated_time" content="2018-02-09T02:52:25.000Z">
+<meta property="og:updated_time" content="2019-03-25T07:04:16.135Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈雪碧图和字体图标">
-<meta name="twitter:description" content="起因 现在是前端技术的大时代。若干年过去之后，也许我们会感慨很多，当年阿当的一篇博文多么的犀利。vue和angular的闹剧。最近临危受命，要做几天的前端开发。说是前端开发，其实就是写html+css+JavaScript,真的，当你面对庞大的前端技术体系无所适从的时候,用最简单的技术来一场放松吧。  这一次开发，没有什么特别的，就是我在小图标展示的时候。在雪碧图和图标字体中徘徊了很久。于是，简单">
+<meta name="twitter:description" content="这一次开发，没有什么特别的，就是我在小图标展示的时候。在雪碧图和图标字体中徘徊了很久。于是，简单研究了一下，就当立一个flag,日后在深究一下。">
 <meta name="twitter:image" content="http://og3rfccos.bkt.clouddn.com/1510541347700.jpg">
 
 
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.3',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
     },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
   };
 </script>
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/11/13/icon-font/"/>
-
-
-
-
-
-  <title>浅谈雪碧图和字体图标 | 地主家的庄园</title>
-  
-
-
-
-
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?f3312eb2b1988723bf44774f9dd305ec";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
-  
-    
-  
 
-  <div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">地主家的庄园</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
+    <title> 浅谈雪碧图和字体图标 - 柏八万的个人博客 </title>
+  </head>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">柏八万的个人博客</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
 </div>
 
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
+      </header>
+      <div id="content">
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
+    <div id="primary">
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
+          浅谈雪碧图和字体图标
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
+      </h1>
 
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
+      <time class="post-time">
+          Nov 13 2017
+      </time>
     </header>
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/13/icon-font/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="地主家的傻儿子">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://po1b3hiii.bkt.clouddn.com/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="地主家的庄园">
-    </span>
 
     
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">浅谈雪碧图和字体图标</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-13T15:03:50+08:00">
-                2017-11-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端观察/" itemprop="url" rel="index">
-                    <span itemprop="name">前端观察</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h4 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h4><blockquote>
+            <div class="post-content">
+            <p>这一次开发，没有什么特别的，就是我在小图标展示的时候。在雪碧图和图标字体中徘徊了很久。于是，简单研究了一下，就当立一个flag,日后在深究一下。</p>
+<a id="more"></a>
+<h4 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h4><blockquote>
 <p>现在是前端技术的大时代。若干年过去之后，也许我们会感慨很多，当年阿当的一篇博文多么的犀利。vue和angular的闹剧。最近临危受命，要做几天的前端开发。说是前端开发，其实就是写<code>html+css+JavaScript</code>,真的，当你面对庞大的前端技术体系无所适从的时候,用最简单的技术来一场放松吧。</p>
 </blockquote>
-<p>这一次开发，没有什么特别的，就是我在小图标展示的时候。在雪碧图和图标字体中徘徊了很久。于是，简单研究了一下，就当立一个flag,日后在深究一下。</p>
 <h4 id="雪碧图"><a href="#雪碧图" class="headerlink" title="雪碧图"></a>雪碧图</h4><blockquote>
 <p>除了叫雪碧图外，它还有很多名字，css sprite, css 精灵等。原理就是将一些小图标合并到一张图片上，然后用css的背景定位来显示需要显示的部分。</p>
 </blockquote>
@@ -407,421 +186,89 @@
 <p><a href="http://www.iconfont.cn/home/index?spm=a313x.7781069.1998910419.2" target="_blank" rel="external">iconfont</a></p>
 <p><a href="http://fontawesome.dashgame.com/" target="_blank" rel="external">fontawesome</a></p>
 
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
+            </div>
           
-            <a href="/tags/前端/" rel="tag"># 前端</a>
-          
-            <a href="/tags/随笔/" rel="tag"># 随笔</a>
-          
-        </div>
-      
 
-      
-      
-      
+    
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="/tags/前端/">前端</a>
+		  
+			<a href="/tags/随笔/">随笔</a>
+		  
+		</div>
+		
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/11/09/程序员当产品经理是一种什么样的体验/" rel="next" title="程序员当产品经理是一种什么样的体验">
-                <i class="fa fa-chevron-left"></i> 程序员当产品经理是一种什么样的体验
-              </a>
-            
-          </div>
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2018/04/28/springboot-swagger/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">springboot-swagger</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="/2017/11/09/程序员当产品经理是一种什么样的体验/">
+        <span class="next-text nav-default">程序员当产品经理是一种什么样的体验</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
 
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/28/springboot-swagger/" rel="prev" title="springboot-swagger">
-                springboot-swagger <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
+        
+  <div class="comments" id="comments">
+    
   </div>
-  
-  
-  
+
+
+      </footer>
+    
   </article>
 
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-
-  
-    <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDM5Mi8xMDkyOQ=="></div>
     </div>
 
-  
-
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="http://po1b3hiii.bkt.clouddn.com/head.jpg"
-                alt="地主家的傻儿子" />
-            
-              <p class="site-author-name" itemprop="name">地主家的傻儿子</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">10</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">17</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          <div class="links-of-author motion-element">
-            
-              
-                <span class="links-of-author-item">
-                  <a href="https://github.com/whiney" target="_blank" title="GitHub">
-                    
-                      <i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="http://www.jianshu.com/u/8cf3c89774ca" target="_blank" title="简书">
-                    
-                      <i class="fa fa-fw fa-envelope"></i>简书</a>
-                </span>
-              
-            
-          </div>
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#起因"><span class="nav-number">1.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#雪碧图"><span class="nav-number">2.</span> <span class="nav-text">雪碧图</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图标字体"><span class="nav-number"></span> <span class="nav-text">图标字体</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">1.</span> <span class="nav-text">总结</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
       </div>
-    </main>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">地主家的傻儿子</span>
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2014 -
+    
+    2019
+    <span class="footer-author">柏八万.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
 
-  
-</div>
+      </footer>
 
-
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
       </div>
-    </footer>
+    </div>
+    
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
     
 
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
 
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
   
 
   
 
-  
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
 
-  
-  
-
-  
-
-  
-
-  
-
-</body>
+  </body>
 </html>
